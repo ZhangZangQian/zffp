@@ -1,0 +1,36 @@
+# ---- 数据与运行产物（体积大、可再生，不入库）----
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+
+# 研究输出（脚本在 research/*.py，结果可重新生成）
+research/out/*
+!research/out/report.html
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# ---- 临时文件 ----
+_*.py
+_*.png
+_*.log
+*.tmp
+~$*

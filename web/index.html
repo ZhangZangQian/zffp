@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>巨阴突破 · 复盘纪律系统</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">巨</span>
+    <div>
+      <div class="brand-name">巨阴突破战法</div>
+      <div class="brand-sub">复盘 · 纪律 · 执行</div>
+    </div>
+  </div>
+
+  <div class="topstats" id="topstats"></div>
+
+  <div class="topactions">
+    <button class="btn ghost" id="btn-update" title="拉取最新行情">更新行情</button>
+    <button class="btn ghost" id="btn-scan" title="本地跑一遍战法">扫描信号</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab active" data-tab="today">今日</button>
+  <button class="tab" data-tab="signals">信号池 <span class="badge" id="tab-signals-badge"></span></button>
+  <button class="tab" data-tab="quote">行情</button>
+  <button class="tab" data-tab="plan">写计划</button>
+  <button class="tab" data-tab="trades">交易</button>
+  <button class="tab" data-tab="review">复盘 <span class="badge red" id="tab-review-badge"></span></button>
+  <button class="tab" data-tab="stats">统计</button>
+  <button class="tab" data-tab="settings">设置</button>
+</nav>
+
+<div class="jobbar" id="jobbar" hidden>
+  <div class="jobbar-fill" id="jobbar-fill"></div>
+  <span id="jobbar-text"></span>
+</div>
+
+<main id="view"></main>
+
+<div class="modal-mask" id="modal-mask" hidden>
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script src="/chart.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

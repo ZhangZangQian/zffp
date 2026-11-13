@@ -1,0 +1,11 @@
+# 统一换行：仓库内一律 LF，Windows 脚本保留 CRLF
+* text=auto eol=lf
+
+*.bat          text eol=crlf
+*.cmd          text eol=crlf
+
+*.png          binary
+*.jpg          binary
+*.ico          binary
+*.db           binary
+*.parquet      binary
